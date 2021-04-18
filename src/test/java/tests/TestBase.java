@@ -19,7 +19,7 @@ public class TestBase {
 
     @BeforeAll
     static void setup() throws MalformedURLException {
-        addListener("AllureSelenide", new AllureSelenide() );
+        addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
         Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
 
