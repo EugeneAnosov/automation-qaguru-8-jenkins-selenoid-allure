@@ -35,5 +35,6 @@ public class TestBase {
         attachScreenshot("Last Screenshot");
         attachPageSource();
         attachAsText("Browser Consol Logs", getConsoleLogs());
+        attachVideo();
     }
 }
