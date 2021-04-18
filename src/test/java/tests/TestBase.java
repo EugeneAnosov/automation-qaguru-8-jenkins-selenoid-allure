@@ -11,6 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static helpers.AttachmentHelper.*;
 
@@ -36,5 +37,6 @@ public class TestBase {
         attachPageSource();
         attachAsText("Browser Consol Logs", getConsoleLogs());
         attachVideo();
+        closeWebDriver();
     }
 }
