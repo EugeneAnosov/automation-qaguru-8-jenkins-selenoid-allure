@@ -16,7 +16,7 @@ public class PracticeFormRegistrationPage extends TestBase {
 
     @Step("Open Student Registration Form")
     public PracticeFormRegistrationPage openPage() {
-        open("https://demoqa.com/automation-practice-form");
+        open(baseUrl);
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         return this;
     }
@@ -88,7 +88,7 @@ public class PracticeFormRegistrationPage extends TestBase {
                 text(testData.hobbies),
                 text(testData.file),
                 text(testData.currentAddress),
-                text(testData.state + " error " + testData.city));
+                text(testData.state + " " + testData.city));
 
         return this;
     }
